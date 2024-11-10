@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
         title: Row(
           children: [
             Image.asset(
-              'assets/images/app_icon.png', // Assurez-vous d'avoir ajouté cette icône dans les assets
+              'assets/images/app_icon.png', // Ensure this icon is in the assets
               width: 30,
               height: 30,
             ),
@@ -39,7 +39,15 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      body: _pages[_selectedIndex],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/solar_system.gif'), // Set the background image here
+            fit: BoxFit.cover, // Adjust to cover the entire screen
+          ),
+        ),
+        child: _pages[_selectedIndex],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(

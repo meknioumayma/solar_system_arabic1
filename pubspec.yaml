@@ -70,6 +70,7 @@ flutter:
     - assets/images/uranus.png
     - assets/images/neptune.png
     - assets/images/app_icon.png
+    - assets/images/solar_system.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
